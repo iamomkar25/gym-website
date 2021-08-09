@@ -1,0 +1,352 @@
+*{
+	margin:0;
+	padding:0;
+	bolder:0;
+
+}
+body{
+	background:#f0f0f0;
+	font:14px 120px Arial,sans-serif;
+	color:#555;
+	margin:0;
+}
+h1{
+	text-align:center;
+	font-size:180%;
+	line-height:120%;
+	padding:3% 0;
+}
+h2{
+	text-decoration:underline;
+	line-height:280%;
+	padding-left:2%;
+}
+h3{
+	line-height:110%;
+	padding:5% 0;
+}
+p{
+	padding:1%;
+}
+img{
+	text-align:center;
+	max-width:100%;
+	height:auto;
+	width:auto;
+}
+a{
+	color:#fff;
+	text-decoration:none;
+	font-weight:bold;
+}
+a:hover{
+	color:#fff;
+	text-decoration:underline;
+}
+header{
+	background:#405580;
+	width:100%;
+	height:86px;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:100;
+	opacity:0.90;
+}
+#logo{
+	float:left;
+	margin:20px;
+	width:150px;
+	height:60px;
+	background:url('images.png') no-repeat center;
+}
+nav{
+   float:right;
+   padding:35px 20px 20px 0;
+}
+#menu-icon{
+	        display:hidden;
+			width:40px;
+			height:40px;
+			
+}
+ul{
+	
+	list-style:none;
+}
+
+nav ul li{
+	display:inline-block;
+	float:left;
+	padding:10px;
+}
+
+.current{
+	color:#fff;
+	text-decoration:underline;
+}
+
+#doc{
+	margin: 40px 0;
+}
+#content{
+	
+	margin:0 auto;
+	max-width:1140px;
+}
+section{
+	
+	width:29%;
+	float:left;
+	margin:2% 2%;
+	text-align:center;
+	cursor:pointer;
+	-webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+section:hover{
+	transform:scale(1.05);
+}
+
+
+.clear{
+	clear:both;
+}
+
+article{
+	float:left;
+	margin:0 auto;
+	width:50%;
+	height:auto;
+	padding:4%;
+}
+
+aside{
+	float:right;
+	margin:0 auto;
+	width:35%;
+	height:auto;
+	padding:3%;
+}
+ul.gym li{
+	
+	padding-left:3%;	
+}
+
+footer{
+	background:#333333;
+	width:100%;
+	overflow:hidden;
+	opacity:0.90;
+}
+
+footer p ,footer h3{
+	color:#fff;
+	
+	
+}
+footer p a{
+	color:#fff;
+	text-decoration:none;
+}
+
+ul.social li{
+            display:inline;
+}
+
+ul.social li img{
+	height:50px;
+}
+footer.second{
+	border-top:1px solid #4D4E50;
+	background-color:#333333;
+	max-height:50px;
+	text-align:center;
+	opacity:0.90;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right:10px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.img1{
+	width:100%;
+	height:30%;
+}
+.img2{
+	height:30%;
+	width:30%;
+}
+
+
+
+
+@media screen and (max-width:478px){
+	body{
+		position:absolute;
+		}
+}
+
+@media screen and (max-width:740px){
+	header{
+		position:absolute;
+		}
+		#menu-icon{
+			display:inline-block;
+		}
+		nav ul, nav:active ul{
+			display:none;
+			position:absolute;
+			padding:20px;
+			background:#405580;
+			border:1 px solid #fff;
+			right:20px;
+			top:60%;
+			width:50%;
+			border-radius:2px 0 2px 2px;
+		}
+		
+		nav li{
+			text-align:center;
+			width:100%;
+			padding:10px 0;
+			margin:0;
+		}
+		
+		nav:hover ul{
+			display:block;
+			
+		}
+		
+		section{
+			float:left;
+			width:100%;
+			margin:0;
+			padding:0;
+		}
+		
+		article{
+			float:left;
+			width:100%;
+			margin:0;
+			padding:0;
+		}
+		
+		aside{
+			float:left;
+			width:100%;
+			margin:0;
+			padding:0;
+		}
+		
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
